@@ -5,5 +5,5 @@ import lombok.Data;
 @Data
 public class ClientCategoryRequest {
 
-    private String clientCategory;
+  private String clientCategory;
 }

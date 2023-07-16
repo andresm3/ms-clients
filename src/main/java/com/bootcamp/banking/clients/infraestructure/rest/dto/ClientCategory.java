@@ -5,7 +5,8 @@ import lombok.Data;
 
 @Data
 public class ClientCategory {
-    @JsonProperty("id")
-    private String id;
-    private String clientCategory;
+
+  @JsonProperty("id")
+  private String id;
+  private String clientCategory;
 }

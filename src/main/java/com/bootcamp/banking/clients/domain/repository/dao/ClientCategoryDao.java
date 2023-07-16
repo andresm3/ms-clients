@@ -7,7 +7,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Data
 @Document("clientCategory")
 public class ClientCategoryDao {
-    @Id
-    private String id;
-    private String clientCategory;
+
+  @Id
+  private String id;
+  private String clientCategory;
 }
