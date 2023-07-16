@@ -1,4 +1,4 @@
-package com.bootcamp.banking.clients.infraestructure.repository.dao;
+package com.bootcamp.banking.clients.domain.repository.dao;
 
 import lombok.Data;
 import org.springframework.data.mongodb.core.mapping.Document;
