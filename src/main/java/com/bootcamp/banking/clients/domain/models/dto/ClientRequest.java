@@ -1,5 +1,8 @@
 package com.bootcamp.banking.clients.domain.models.dto;
 
+import lombok.Data;
+
+@Data
 public class ClientRequest {
 
   private String documentType;

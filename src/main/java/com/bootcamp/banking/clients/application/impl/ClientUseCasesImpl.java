@@ -1,16 +1,16 @@
 package com.bootcamp.banking.clients.application.impl;
 
-import com.bootcamp.banking.clients.application.ClientsUseCases;
+import com.bootcamp.banking.clients.application.ClientUseCases;
 import com.bootcamp.banking.clients.domain.models.Client;
+import com.bootcamp.banking.clients.domain.models.dto.ClientRequest;
 import com.bootcamp.banking.clients.domain.repository.ClientRepository;
-import com.bootcamp.banking.clients.infraestructure.rest.dto.ClientRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @Service
-public class ClientsUseCasesImpl implements ClientsUseCases {
+public class ClientUseCasesImpl implements ClientUseCases {
 
   @Autowired
   private ClientRepository clientRepository;

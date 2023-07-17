@@ -1,11 +1,11 @@
 package com.bootcamp.banking.clients.application;
 
 import com.bootcamp.banking.clients.domain.models.Client;
-import com.bootcamp.banking.clients.infraestructure.rest.dto.ClientRequest;
+import com.bootcamp.banking.clients.domain.models.dto.ClientRequest;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
-public interface ClientsUseCases {
+public interface ClientUseCases {
 
   Flux<Client> getAllClients();
 

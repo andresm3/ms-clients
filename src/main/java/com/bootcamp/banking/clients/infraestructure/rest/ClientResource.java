@@ -1,8 +1,8 @@
 package com.bootcamp.banking.clients.infraestructure.rest;
 
-import com.bootcamp.banking.clients.application.ClientsUseCases;
+import com.bootcamp.banking.clients.application.ClientUseCases;
 import com.bootcamp.banking.clients.domain.models.Client;
-import com.bootcamp.banking.clients.infraestructure.rest.dto.ClientRequest;
+import com.bootcamp.banking.clients.domain.models.dto.ClientRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,20 +20,20 @@ import reactor.core.publisher.Mono;
 public class ClientResource {
 
   @Autowired
-  private ClientsUseCases clientsUseCases;
+  private ClientUseCases clientUseCases;
 
   @GetMapping
   public Flux<Client> getAll() {
-    return clientsUseCases.getAllClients();
+    return clientUseCases.getAllClients();
   }
 
   @GetMapping("/{id}")
   public Mono<Client> findClientById(@PathVariable String id) {
-    return clientsUseCases.getClientById(id);
+    return clientUseCases.getClientById(id);
   }
 
   @PostMapping
   public Mono<Client> createClient(@RequestBody ClientRequest client) {
-    return clientsUseCases.createClient(client);
+    return clientUseCases.createClient(client);
   }
 }

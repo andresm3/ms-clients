@@ -37,14 +37,14 @@ public class ClientCategoryResource {
   private ClientCategory fromClientCategoryDaoToClientCategoryDto(ClientCategoryDao dao) {
     ClientCategory clientCategory = new ClientCategory();
     clientCategory.setId(dao.getId());
-    clientCategory.setClientCategory(dao.getClientCategory());
+    clientCategory.setClientCategory(dao.getCategoryName());
     return clientCategory;
   }
 
   private ClientCategoryDao fromClientCategoryRequestToClientCategoryDao(
     ClientCategoryRequest clientCategoryRequest) {
     ClientCategoryDao clientCategoryDao = new ClientCategoryDao();
-    clientCategoryDao.setClientCategory(clientCategoryRequest.getClientCategory());
+    clientCategoryDao.setCategoryName(clientCategoryRequest.getCategoryName());
     return clientCategoryDao;
   }
 }
