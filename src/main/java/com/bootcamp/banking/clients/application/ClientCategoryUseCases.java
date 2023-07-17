@@ -1,7 +1,7 @@
 package com.bootcamp.banking.clients.application;
 
 import com.bootcamp.banking.clients.domain.models.ClientCategory;
-import com.bootcamp.banking.clients.domain.models.dto.ClientCategoryRequest;
+import com.bootcamp.banking.clients.domain.dto.ClientCategoryRequest;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 

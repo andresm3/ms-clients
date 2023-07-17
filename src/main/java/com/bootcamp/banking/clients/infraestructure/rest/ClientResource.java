@@ -2,7 +2,7 @@ package com.bootcamp.banking.clients.infraestructure.rest;
 
 import com.bootcamp.banking.clients.application.ClientUseCases;
 import com.bootcamp.banking.clients.domain.models.Client;
-import com.bootcamp.banking.clients.domain.models.dto.ClientRequest;
+import com.bootcamp.banking.clients.domain.dto.ClientRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

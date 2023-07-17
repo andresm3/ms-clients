@@ -1,6 +1,6 @@
 package com.bootcamp.banking.clients.infraestructure.rest;
 
-import com.bootcamp.banking.clients.domain.repository.ClientCategoryRepository;
+import com.bootcamp.banking.clients.infraestructure.repository.ClientCategoryRepository;
 import com.bootcamp.banking.clients.domain.repository.dao.ClientCategoryDao;
 import com.bootcamp.banking.clients.infraestructure.rest.dto.ClientCategory;
 import com.bootcamp.banking.clients.infraestructure.rest.dto.ClientCategoryRequest;

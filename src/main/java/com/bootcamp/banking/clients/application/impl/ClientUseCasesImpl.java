@@ -2,8 +2,8 @@ package com.bootcamp.banking.clients.application.impl;
 
 import com.bootcamp.banking.clients.application.ClientUseCases;
 import com.bootcamp.banking.clients.domain.models.Client;
-import com.bootcamp.banking.clients.domain.models.dto.ClientRequest;
-import com.bootcamp.banking.clients.domain.repository.ClientRepository;
+import com.bootcamp.banking.clients.domain.dto.ClientRequest;
+import com.bootcamp.banking.clients.infraestructure.repository.ClientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;

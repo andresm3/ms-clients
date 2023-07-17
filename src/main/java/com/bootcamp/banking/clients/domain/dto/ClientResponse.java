@@ -1,4 +1,4 @@
-package com.bootcamp.banking.clients.domain.models.dto;
+package com.bootcamp.banking.clients.domain.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
