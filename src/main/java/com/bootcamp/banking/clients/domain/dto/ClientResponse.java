@@ -10,7 +10,11 @@ public class ClientResponse {
   private String id;
   private String documentType;
   private String documentNumber;
-  private String name;
+  private String firstName;
+  private String lastName;
+  private int type;
+  private int profile;
+  private boolean active;
 
   private String idClientCategory;
 }

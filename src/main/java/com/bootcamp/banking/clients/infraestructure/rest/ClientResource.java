@@ -2,7 +2,6 @@ package com.bootcamp.banking.clients.infraestructure.rest;
 
 import com.bootcamp.banking.clients.application.ClientUseCases;
 import com.bootcamp.banking.clients.domain.models.Client;
-import com.bootcamp.banking.clients.domain.dto.ClientRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -27,13 +26,22 @@ public class ClientResource {
     return clientUseCases.getAllClients();
   }
 
-  @GetMapping("/{id}")
+  @GetMapping("/id/{id}")
   public Mono<Client> findClientById(@PathVariable String id) {
     return clientUseCases.getClientById(id);
   }
 
+  @GetMapping("/document/{documentNumber}")
+  public Mono<Client> findClientByDocumentNumber(@PathVariable String documentNumber) {
+    return clientUseCases.getClientByDocumentNumber(documentNumber);
+  }
+
+  @GetMapping("/lastname/{lastName}")
+  public Flux<Client> findClientByLastName(@PathVariable String lastName) {
+    return clientUseCases.getClientByLastName(lastName);
+  }
   @PostMapping
-  public Mono<Client> createClient(@RequestBody ClientRequest client) {
+  public Mono<Client> createClient(@RequestBody Client client) {
     return clientUseCases.createClient(client);
   }
 }
